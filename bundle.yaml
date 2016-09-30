@@ -1,0 +1,22 @@
+series: "xenial"
+machines:
+# Juju Bootstrap / Controller
+  '0':
+    constraints: arch=amd64
+# Misc Admin Non-Big-Data
+  '1':
+    constraints: arch=amd64 
+# Misc Admin Non-Big-Data
+  '2':
+    constraints: arch=amd64 
+services:
+  magpie:
+    charm: "cs:~admcleod/magpie"
+    num_units: 6
+    to:
+      - "1"
+      - "2"
+      - "lxc:1"
+      - "lxc:1"
+      - "lxc:2"
+      - "lxc:2"
