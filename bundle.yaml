@@ -11,7 +11,8 @@ machines:
     constraints: arch=amd64 
 services:
   magpie:
-    charm: "cs:~admcleod/magpie"
+    charm: "cs:~admcleod/xenial/magpie"
+    series: "xenial"
     num_units: 6
     to:
       - "1"
