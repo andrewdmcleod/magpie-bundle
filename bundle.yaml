@@ -1,13 +1,16 @@
 series: "xenial"
+machines:	
+  '0':	
+  '1':	 	 
 services:
   magpie:
     charm: "cs:~admcleod/xenial/magpie"
     series: "xenial"
     num_units: 6
     to:
+      - "0"
       - "1"
-      - "2"
+      - "lxc:0"
+      - "lxc:0"
       - "lxc:1"
       - "lxc:1"
-      - "lxc:2"
-      - "lxc:2"
