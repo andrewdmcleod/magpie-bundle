@@ -1,14 +1,4 @@
 series: "xenial"
-machines:
-# Juju Bootstrap / Controller
-  '0':
-    constraints: arch=amd64
-# Misc Admin Non-Big-Data
-  '1':
-    constraints: arch=amd64 
-# Misc Admin Non-Big-Data
-  '2':
-    constraints: arch=amd64 
 services:
   magpie:
     charm: "cs:~admcleod/xenial/magpie"
