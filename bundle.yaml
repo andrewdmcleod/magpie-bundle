@@ -7,7 +7,7 @@ services:
   magpie:
     charm: "cs:~admcleod/xenial/magpie"
     series: "xenial"
-    num_units: 2
+    num_units: 6
     to:
       - "0"
       - "1"
