@@ -1,7 +1,6 @@
 series: "bionic"
 machines:	
   '0':	
-  '1':
 services:
   magpie:
     charm: "cs:~admcleod/xenial/magpie"
