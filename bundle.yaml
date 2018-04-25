@@ -2,19 +2,10 @@ series: "xenial"
 machines:	
   '0':	
   '1':	 	 
-  '2':
-  '3':
 services:
   magpie:
-    charm: "cs:~admcleod/xenial/magpie"
-    series: "xenial"
-    num_units: 8
+    charm: "cs:~admcleod/magpie"
+    num_units: 2
     to:
       - "0"
       - "1"
-      - "2"
-      - "3"
-      - "lxd:0"
-      - "lxd:1"
-      - "lxd:2"
-      - "lxd:3"
