@@ -1,11 +1,14 @@
 series: "bionic"
-machines:	
+machines:
   '0':	
+  '1':
 services:
   magpie:
     charm: "cs:~admcleod/magpie"
     series: "bionic"
-    num_units: 2 
+    num_units: 4 
     to:
       - "0"
       - "lxd:0"
+      - 1
+      - lxd:1
